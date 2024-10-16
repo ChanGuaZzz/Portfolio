@@ -4,6 +4,7 @@ import Dropdown from "./componentes/dropdown";
 import Header from "./componentes/header";
 import Main from "./componentes/main";
 import {useLanguage} from "./context/LanguageContext";
+import Footer from "./componentes/footer";
 
 function App() {
   const [isInit, setIsInit] = useState(true);
@@ -21,24 +22,34 @@ function App() {
     }, 700);
   }, []);
 
+  useEffect(() => {
+    if (!isInit) {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [isInit]);
+
   return (
     <>
-        <div className="w-screen h-screen bg-black">
-          {isInit ? (
-            <div className={`w-screen h-screen flex items-center justify-center transition-all duration-[1000ms] bg-black ${initAnimation}`}>
+        <div className={` bg-black `}>
+          {isInit && (
+            <div className="size-full fixed">
+            <div className={`w-screen h-screen  flex items-center justify-center transition-all duration-[1000ms] bg-black ${initAnimation}`}>
               <span className={`text-2xl m-1 transition-all duration-700 ${initAnimation}`}>Geyson Gualdron </span>
               <span className={`opacity-50 transition-all duration-700 ${initAnimation} delay-200`}> Portafolio</span>
             </div>
-          ) : (
-            <div className={`w-screen h-screen transition-all duration-700 flex justify-center opacity-0 ${initAnimation}`}>
+            </div>
+          ) }
+
+            <div className={`size-full transition-all duration-700 flex justify-center opacity-0 ${initAnimation}`}>
               <Header />
               <Main />
+              {/* <Footer/> */}
             </div>
-          )}
+          
         </div>
     </>
   );
 }
 
 export default App;
-1;
+

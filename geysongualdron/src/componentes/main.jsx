@@ -8,6 +8,8 @@ function Main() {
   const [transitionsection, setTransitionsection] = useState("");
   const [transitionsectionreverse, setTransitionsectionreverse] = useState("");
   useEffect(() => {
+    setTransitionsection("animate__fadeInRight");
+    setTransitionsectionreverse("animate__fadeInLeft");
     const handleScroll = () => {
       const sections = document.querySelectorAll(".sections");
       sections.forEach((section) => {
@@ -20,7 +22,10 @@ function Main() {
       });
     };
 
+    
+
     window.addEventListener("scroll", handleScroll);
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -28,7 +33,7 @@ function Main() {
 
   return (
     <>
-      <main className="h-screen w-screen z-[0] pt-20 flex items-center flex-col ">
+      <main className="size-full z-[0] pt-20 flex items-center flex-col ">
         <img className="picture border rounded-full size-[300px] m-3" src={GeysonPicture} alt="no there photo" />
         <span className="text-center font-semibold text-[#e4311e] text-sm  px-2 rounded-full bg-slate-300 bg-opacity-10">{Texts.webdeveloper}</span>
         <span className="text-center  text-shadow-blue text-[#aaaca2] text-sm w-[60%]">- Front-End</span>
@@ -46,7 +51,7 @@ function Main() {
           </div>
           <div className="w-full flex flex-wrap flex-row items-center justify-center">
             <div
-              className={`w-[80%] md:w-[40%] xl:w-[30%]   py-10 flex flex-col justify-center items-center mx-10 my-5 rounded-2xl bg-white bg-opacity-10 animate__animated transition-all ${transitionsectionreverse}`}
+              className={`bloque w-[80%] md:w-[40%] xl:w-[30%] flex flex-col justify-center items-center mx-10 my-5 rounded-2xl bg-white bg-opacity-10 animate__animated transition-all ${transitionsectionreverse}`}
             >
               <div className="flex flex-col items-center w-[70%] ">
                 <div className="bg-[#1e63e4] iconos m-2 size-20 flex items-center justify-center rounded-full">
@@ -73,7 +78,7 @@ function Main() {
               </div>
             </div>
             <div
-              className={`w-[80%] md:w-[40%] xl:w-[30%] flex flex-col justify-center items-center sections mx-10 my-5 rounded-2xl bg-white bg-opacity-10 animate__animated transition-all ${transitionsectionreverse}`}
+              className={` bloque inview sections  w-[80%] md:w-[40%] xl:w-[30%] flex flex-col justify-center items-center  mx-10 my-5 rounded-2xl bg-white bg-opacity-10 animate__animated transition-all ${transitionsectionreverse}`}
             >
               <div className="flex flex-col items-center w-[70%] ">
                 <div className="bg-[#e4311e] iconos m-2 size-20 flex items-center justify-center rounded-full">

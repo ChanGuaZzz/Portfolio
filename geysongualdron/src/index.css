@@ -21,6 +21,7 @@ body {
   z-index: 1;
 }
 
+
 .dropdown-toggle {
   background-color: #11111160;
   backdrop-filter: blur(5px);
@@ -65,8 +66,12 @@ body {
   text-shadow: 1px 1px 10px #ffffff;
 }
 
-.sections > div {
+.bloque > div {
   margin-block: 40px; /* Puedes ajustar el valor del margen según tus necesidades */
+}
+
+.bloque{
+  min-height: 650px;
 }
 
 ul>li {
