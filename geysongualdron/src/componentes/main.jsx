@@ -3,31 +3,55 @@ import GeysonPicture from "../assets/img/geysonPicture.jpg";
 import { useLanguage } from "../context/LanguageContext";
 import "animate.css";
 
-function Main() {
+function Main({isInit}) {
   const { Texts } = useLanguage();
   const [transitionsection, setTransitionsection] = useState("");
   const [transitionsectionreverse, setTransitionsectionreverse] = useState("");
   useEffect(() => {
-    setTransitionsection("animate__fadeInRight");
+    if(!isInit){
+      setTimeout(() => {
+      setTransitionsection("animate__fadeInRight");
     setTransitionsectionreverse("animate__fadeInLeft");
+     }, 1500);
+    }
+    
     const handleScroll = () => {
       const sections = document.querySelectorAll(".sections");
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
         if (rect.top <= window.innerHeight) {
           section.classList.add("animate__fadeInRight");
-        } else {
+          console.log("entro");
+        }else if(rect.top >= window.innerHeight){
           section.classList.remove("animate__fadeInRight");
+          console.log("salio");
         }
       });
     };
 
-    
+    const handleResize = () => {
+      const sections = document.querySelectorAll(".inview");
+      console.log(sections);
+      if (window.innerWidth <= 640) { // sm: breakpoint is 640px
+        sections.forEach((section) => {
+          section.classList.remove("animate__fadeInRight");
+          console.log("remove section");
+        });
+      }
+    };
 
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+
+    // Initial check
+    handleResize();
+
+     
+
     
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -39,7 +63,7 @@ function Main() {
         <span className="text-center  text-shadow-blue text-[#aaaca2] text-sm w-[60%]">- Front-End</span>
         <span className="text-center  text-shadow-red text-[#aaaca2] text-sm  w-[60%]">- Back-End</span>
           <div
-            className={` py-5 flex flex-col justify-center items-center  mx-10 my-5 rounded-2xl bg-white bg-opacity-10 animate__animated transition-all ${transitionsection}`}
+            className={` py-5 flex flex-col justify-center items-center  mx-10 my-5 rounded-2xl bg-white bg-opacity-10 animate__animated transition-all `}
           >
             <div className="flex justify-center w-[70%]">
               <p className=" sm:w-[300px]  text-center">
@@ -51,7 +75,7 @@ function Main() {
           </div>
           <div className="w-full flex flex-wrap flex-row items-center justify-center">
             <div
-              className={`bloque w-[80%] md:w-[40%] xl:w-[30%] flex flex-col justify-center items-center mx-10 my-5 rounded-2xl bg-white bg-opacity-10 animate__animated transition-all ${transitionsectionreverse}`}
+              className={`bloque w-[80%] md:w-[70%] lg:w-[40%] xl:w-[30%] flex flex-col justify-center items-center mx-10 my-5 rounded-2xl bg-white bg-opacity-10 animate__animated transition-all opacity-0 ${transitionsectionreverse}`}
             >
               <div className="flex flex-col items-center w-[70%] ">
                 <div className="bg-[#1e63e4] iconos m-2 size-20 flex items-center justify-center rounded-full">
@@ -78,7 +102,7 @@ function Main() {
               </div>
             </div>
             <div
-              className={` bloque inview sections  w-[80%] md:w-[40%] xl:w-[30%] flex flex-col justify-center items-center  mx-10 my-5 rounded-2xl bg-white bg-opacity-10 animate__animated transition-all ${transitionsectionreverse}`}
+              className={` bloque inview sections  w-[80%] md:w-[70%] lg:w-[40%] xl:w-[30%] flex flex-col justify-center items-center  mx-10 my-5 rounded-2xl bg-white bg-opacity-10 animate__animated transition-all ${transitionsection}`}
             >
               <div className="flex flex-col items-center w-[70%] ">
                 <div className="bg-[#e4311e] iconos m-2 size-20 flex items-center justify-center rounded-full">
