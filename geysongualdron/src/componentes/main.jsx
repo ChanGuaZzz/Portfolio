@@ -14,54 +14,15 @@ function Main({isInit}) {
     setTransitionsectionreverse("animate__fadeInLeft");
      }, 1500);
     }
-    
-    const handleScroll = () => {
-      const sections = document.querySelectorAll(".sections");
-      sections.forEach((section) => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= window.innerHeight) {
-          section.classList.add("animate__fadeInRight");
-          console.log("entro");
-        }else if(rect.top >= window.innerHeight){
-          section.classList.remove("animate__fadeInRight");
-          console.log("salio");
-        }
-      });
-    };
-
-    const handleResize = () => {
-      const sections = document.querySelectorAll(".inview");
-      console.log(sections);
-      if (window.innerWidth <= 640) { // sm: breakpoint is 640px
-        sections.forEach((section) => {
-          section.classList.remove("animate__fadeInRight");
-          console.log("remove section");
-        });
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", handleResize);
-
-    // Initial check
-    handleResize();
-
-     
-
-    
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
 
   return (
     <>
       <main className="size-full z-[0] pt-20 flex items-center flex-col ">
         <img className="picture border rounded-full size-[300px] m-3" src={GeysonPicture} alt="no there photo" />
-        <span className="text-center font-semibold text-[#e4311e] text-sm  px-2 rounded-full bg-slate-300 bg-opacity-10">{Texts.webdeveloper}</span>
-        <span className="text-center  text-shadow-blue text-[#aaaca2] text-sm w-[60%]">- Front-End</span>
-        <span className="text-center  text-shadow-red text-[#aaaca2] text-sm  w-[60%]">- Back-End</span>
+        <span className="text-center font-semibold text-[#e4311e] text-sm my-2 px-2 rounded-full bg-slate-300 bg-opacity-10">{Texts.webdeveloper}</span>
+        <span className="text-center  text-shadow-blue text-[#aaaca2] text-sm my-2 w-[60%]">- Front-End</span>
+        <span className="text-center  text-shadow-red text-[#aaaca2] text-sm my-2  w-[60%]">- Back-End</span>
           <div
             className={` py-5 flex flex-col justify-center items-center  mx-10 my-5 rounded-2xl bg-white bg-opacity-10 animate__animated transition-all `}
           >

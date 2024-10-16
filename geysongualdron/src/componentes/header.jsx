@@ -7,7 +7,7 @@ function Header() {
   const { Texts, toggleLanguage, language } = useLanguage();
 
   return (
-    <header className="fixed z-[1] bg-[#050505] px-6 w-screen">
+    <header className="fixed z-[1] bg-[#050505] px-6 w-full">
       <div className="flex flex-grow items-center h-16 justify-between">
         <div className="flex">
           <a href="/" className="text-2xl m-1 ">Geyson Gualdron</a>
