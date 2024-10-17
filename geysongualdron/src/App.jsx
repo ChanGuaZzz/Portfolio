@@ -40,10 +40,10 @@ function App() {
             </div>
           ) }
 
-            <div className={`size-full transition-all duration-700 flex justify-center opacity-0 ${initAnimation}`}>
+            <div className={`size-full transition-all duration-700  opacity-0 ${initAnimation}`}>
               <Header />
               <Main />
-              {/* <Footer/> */}
+              <Footer/>
             </div>
           
         </div>

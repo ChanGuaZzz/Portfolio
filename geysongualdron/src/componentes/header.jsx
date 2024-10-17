@@ -1,10 +1,30 @@
 import Dropdown from "./dropdown";
 import { useLanguage } from "../context/LanguageContext";
 import ToggleButton from "./toggleButton";
+import { useEffect } from "react";
 
 function Header() {
 
   const { Texts, toggleLanguage, language } = useLanguage();
+
+  useEffect(() => {
+    const handleSmoothScroll = (event) => {
+      if (event.target.tagName === "A" && event.target.getAttribute("href").startsWith("#")) {
+        event.preventDefault();
+        const targetId = event.target.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    };
+
+    document.addEventListener("click", handleSmoothScroll);
+
+    return () => {
+      document.removeEventListener("click", handleSmoothScroll);
+    };
+  }, []);
 
   return (
     <header className="fixed z-[1] bg-[#050505] px-6 w-full">

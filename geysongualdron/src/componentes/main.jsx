@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import GeysonPicture from "../assets/img/geysonPicture.jpg";
 import { useLanguage } from "../context/LanguageContext";
 import "animate.css";
+import Project from "./project";
 
 function Main({isInit}) {
   const { Texts } = useLanguage();
@@ -10,16 +11,16 @@ function Main({isInit}) {
   useEffect(() => {
     if(!isInit){
       setTimeout(() => {
-      setTransitionsection("animate__fadeInRight");
-    setTransitionsectionreverse("animate__fadeInLeft");
+      setTransitionsection("");
+    setTransitionsectionreverse("");
      }, 1500);
     }
   }, []);
 
   return (
     <>
-      <main className="size-full z-[0] pt-20 flex items-center flex-col ">
-        <img className="picture border rounded-full size-[300px] m-3" src={GeysonPicture} alt="no there photo" />
+      <main id="about" className="size-full z-[0] pt-20 flex items-center flex-col ">
+        <img  className="picture border rounded-full size-[300px] m-3" src={GeysonPicture} alt="no there photo" />
         <span className="text-center font-semibold text-[#e4311e] text-sm my-2 px-2 rounded-full bg-slate-300 bg-opacity-10">{Texts.webdeveloper}</span>
         <span className="text-center  text-shadow-blue text-[#aaaca2] text-sm my-2 w-[60%]">- Front-End</span>
         <span className="text-center  text-shadow-red text-[#aaaca2] text-sm my-2  w-[60%]">- Back-End</span>
@@ -90,6 +91,13 @@ function Main({isInit}) {
               </div>
             </div>
         </div>
+
+        {/* <div className="w-full flex flex-wrap flex-row items-center justify-center ">
+        <Project filename={"controlz.jpg"}/>
+        <Project filename={"blackjack.png"}/>
+        <Project filename={"controlzlogin.jpg"}/>
+
+        </div> */}
       </main>
     </>
   );

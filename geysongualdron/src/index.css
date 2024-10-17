@@ -10,6 +10,7 @@
 body {
   font-family: "Neue", sans-serif;
   color: white;
+  scroll-behavior: smooth;
 }
 
 .dropdown {
@@ -20,6 +21,13 @@ body {
   right: 0px;
   z-index: 1;
 }
+
+.project:hover{
+  opacity: 80%;
+}
+
+
+
 
 
 .dropdown-toggle {
@@ -47,7 +55,9 @@ body {
   padding: 10px 0;
   z-index: 1;
   overflow: hidden;
+  width: 200px;
   transition: all 0.3s ease;
+
   
 }
 
@@ -63,15 +73,11 @@ body {
 }
 
 .text-shadow{
-  text-shadow: 1px 1px 10px #ffffff;
+  text-shadow: 1px 1px 10px #000000;
 }
 
 .bloque > div {
   margin-block: 40px; /* Puedes ajustar el valor del margen según tus necesidades */
-}
-
-.bloque{
-  min-height: 650px;
 }
 
 ul>li {
@@ -88,5 +94,31 @@ ul>li {
 .iconos:hover{
   box-shadow:  -11px -11px 27px #292929,
   11px 11px 27px #0b0b0b;
+}
+
+.dropdown-menu > a {
+  width: 100%;
+  text-align: center;
+}
+
+.bloque{
+  min-height: 650px;
+  view-timeline-name: --bloque;
+  view-timeline-axis: block;
+  animation-timeline: --bloque ;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+  
 }
 

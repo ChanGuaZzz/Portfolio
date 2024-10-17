@@ -25,17 +25,17 @@ const Dropdown = () => {
           </g>
         </svg>
       </button>
-      <ul className={`dropdown-menu ${isOpen}`}>
+      <ul className={`dropdown-menu flex flex-col items-center  ${isOpen}`}>
         {isOpen === "max-h-48" ? (
           <>
             <a href="/">
-              <li className="dropdown-item font-semibold border-b border-b-[#ffffff30]">About</li>
+              <li className="dropdown-item w-full font-semibold border-b border-b-[#ffffff30]">About</li>
             </a>
             <a href="#projects">
-              <li className="dropdown-item border-b border-b-[#ffffff30]">Projects</li>
+              <li className="dropdown-item w-full border-b border-b-[#ffffff30]">Projects</li>
             </a>
             <a href="#contact">
-              <li className="dropdown-item border-b border-b-[#ffffff30]">Contact</li>
+              <li className="dropdown-item w-full border-b border-b-[#ffffff30]">Contact</li>
             </a>
             <ToggleButton />
           </>
