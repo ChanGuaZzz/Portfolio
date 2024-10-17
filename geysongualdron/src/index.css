@@ -22,9 +22,15 @@ body {
   z-index: 1;
 }
 
-.project:hover{
-  opacity: 80%;
+.icongoproject:hover{
+
+  background-color: #f8f7f7fb;
+  color: #000000;
+  transform: scale(1.1);
 }
+
+
+
 
 
 
@@ -81,8 +87,21 @@ body {
 }
 
 ul>li {
-  list-style-type: circle;
   margin-block: 10px;
+  transition: all .3s ease;
+  border-radius: 20%;
+  padding: 3px;
+}
+ul>li:hover {
+  box-shadow:  16px 16px 31px #0a0a0a,
+             -16px -16px 31px #2a2a2a;
+  transform: scale(1.1);
+}
+
+.bg-hover{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .iconos{

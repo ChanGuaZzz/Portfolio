@@ -14,7 +14,9 @@ export const Texts = {
     frontText: "I love bringing my ideas to life; I truly enjoy the process.",
     backText: "If you can imagine it, I can program it.",
     languageiuse: "Languages I use ",
-    devtools: "Dev Tools"
+    devtools: "Dev Tools",
+    blackjackdescription: "A simple BlackJack game built using ReactJS with betting functionality.",
+    controlzdescription: "ControlZ is a fitness application designed to help you achieve your health goals",
   },
   es: {
     descriptionOne: `Hola soy Geyson y me apasiona la tecnología y `,

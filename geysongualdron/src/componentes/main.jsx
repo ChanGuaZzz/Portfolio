@@ -3,6 +3,10 @@ import GeysonPicture from "../assets/img/geysonPicture.jpg";
 import { useLanguage } from "../context/LanguageContext";
 import "animate.css";
 import Project from "./project";
+import controlz from "../assets/img/controlz.jpg";
+import blackjack from "../assets/img/blackjack.png";
+import blackjack2 from "../assets/img/blackjack2.png";
+import controlz2 from "../assets/img/controlz2.jpg";
 
 function Main({isInit}) {
   const { Texts } = useLanguage();
@@ -20,7 +24,7 @@ function Main({isInit}) {
   return (
     <>
       <main id="about" className="size-full z-[0] pt-20 flex items-center flex-col ">
-        <img  className="picture border rounded-full size-[300px] m-3" src={GeysonPicture} alt="no there photo" />
+      <img  className="picture border rounded-full size-[300px] m-3" src={GeysonPicture} alt="no there photo" />
         <span className="text-center font-semibold text-[#e4311e] text-sm my-2 px-2 rounded-full bg-slate-300 bg-opacity-10">{Texts.webdeveloper}</span>
         <span className="text-center  text-shadow-blue text-[#aaaca2] text-sm my-2 w-[60%]">- Front-End</span>
         <span className="text-center  text-shadow-red text-[#aaaca2] text-sm my-2  w-[60%]">- Back-End</span>
@@ -49,7 +53,7 @@ function Main({isInit}) {
                   <h2 className="font-semibold text-[#1e63e4]">{Texts.languageiuse}</h2>
                   <p>HTML, CSS, JS, Git </p>
                 </div>
-                <div className=" mt-8 text-center">
+                <div className=" mt-8 w-[50%] text-center">
                   <h2 className="font-semibold text-[#1e63e4]">{Texts.devtools}</h2>
                   <ul>
                     <li>React</li>
@@ -76,7 +80,7 @@ function Main({isInit}) {
                   <h2 className="font-semibold text-[#e4311e]">{Texts.languageiuse}</h2>
                   <p>JS, TS, Python, Git, MongoDB, MySQL </p>
                 </div>
-                <div className=" mt-8 text-center">
+                <div className=" mt-8 w-[50%] text-center">
                   <h2 className="font-semibold text-[#ff4934]">{Texts.devtools}</h2>
                   <ul>
                     <li>NodeJs</li>
@@ -91,13 +95,14 @@ function Main({isInit}) {
               </div>
             </div>
         </div>
+        <hr className="w-[90%] border-[#646464]"></hr>
+        <div className="my-10 w-full flex flex-wrap flex-row items-center justify-center ">
+        <Project title={"ControlZ"} img={controlz} img2={"controlz2.jpg"} description={Texts.controlzdescription} link={"https://controlz.onrender.com"}  linkrepo={"https://github.com/RivotX/ControlZ.git"} />
+        <Project title={"BlackJack"} img={blackjack} img2={"blackjack2.png"} description={Texts.blackjackdescription} link={"https://blackjack-gyzx.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/BlackJack-.git"}/>
+        
 
-        {/* <div className="w-full flex flex-wrap flex-row items-center justify-center ">
-        <Project filename={"controlz.jpg"}/>
-        <Project filename={"blackjack.png"}/>
-        <Project filename={"controlzlogin.jpg"}/>
-
-        </div> */}
+        </div>
+        
       </main>
     </>
   );
