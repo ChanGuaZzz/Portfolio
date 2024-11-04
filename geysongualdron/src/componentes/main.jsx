@@ -97,8 +97,8 @@ function Main({isInit}) {
         </div>
         <hr className="w-[90%] border-[#646464]"></hr>
         <div className="my-10 w-full flex flex-wrap flex-row items-center justify-center ">
-        <Project title={"ControlZ"} img={controlz} img2={"controlz2.jpg"} description={Texts.controlzdescription} link={"https://controlz.onrender.com"}  linkrepo={"https://github.com/RivotX/ControlZ.git"} />
-        <Project title={"BlackJack"} img={blackjack} img2={"blackjack2.png"} description={Texts.blackjackdescription} link={"https://blackjack-gyzx.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/BlackJack-.git"}/>
+        <Project title={"ControlZ"} img={controlz} img2={"controlz2.jpg"} tools={["React","ExpressJs", "Tailwind", "MongoDB", "MySQL"]} description={Texts.controlzdescription} link={"https://controlz.onrender.com"}  linkrepo={"https://github.com/RivotX/ControlZ.git"} />
+        <Project title={"BlackJack"} img={blackjack} img2={"blackjack2.png"} tools={["React","JavaScript", "Tailwind"]} description={Texts.blackjackdescription} link={"https://blackjack-gyzx.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/BlackJack-.git"}/>
         
 
         </div>

@@ -15,8 +15,8 @@ export const Texts = {
     backText: "If you can imagine it, I can program it.",
     languageiuse: "Languages I use ",
     devtools: "Dev Tools",
-    blackjackdescription: "A simple BlackJack game built using ReactJS with betting functionality.",
-    controlzdescription: "ControlZ is a fitness application designed to help you achieve your health goals",
+    blackjackdescription: "A simple BlackJack game built using ReactJS",
+    controlzdescription: "ControlZ is a fitness application",
   },
   es: {
     descriptionOne: `Hola soy Geyson y me apasiona la tecnología y `,
@@ -32,6 +32,9 @@ export const Texts = {
     frontText: "Me encanta llevar mis ideas a la vida; realmente disfruto el proceso.",
     backText: "Si puedes imaginarlo, puedo programarlo.",
     languageiuse: "Lenguajes que uso :",
-    devtools: "Herramientas de Desarrollo"
+    devtools: "Herramientas de Desarrollo",
+    blackjackdescription: "Un simple juego de BlackJack construido usando ReactJS con funcionalidad de apuestas.",
+    controlzdescription: "ControlZ es una aplicación de fitness diseñada para ayudarte a alcanzar tus objetivos de salud",
+
   },
 };
