@@ -1,18 +1,39 @@
 import { useState, useEffect } from "react";
+import PreviewProject from "../modals/previewProject";
 
-function Project({ title, tools, description, link, img, img2, linkrepo }) {
+function Project({ title, tools, description, link, img, img2, linkrepo, photos }) {
   const [hover, sethover] = useState("opacity-0 pointer-events-none bottom-[100%]");
+  const [previewProject, setPreviewProject] = useState(false);
+  const [project, setproject] = useState({});
 
+  useEffect(() => {
+     setproject({title, tools, description, link, img, img2, linkrepo, photos});
+  
+  }
+  , []);
+    
   const handlehover = () => {
     sethover(hover == "opacity-0 pointer-events-none bottom-[100%]" ? "bg-opacity-60 bottom-0" : "opacity-0 pointer-events-none bottom-[100%]");
     console.log(hover, "y el hover");
   };
+
+  useEffect(() => {
+    console.log("entra al proyecto");
+    if(previewProject){
+    handlehover();
+    }
+  }, [previewProject]);
   return (
+    <>
     <div
       onMouseEnter={handlehover}
       onMouseLeave={handlehover}
       className={`relative project flex border border-slate-300 m-3 transition-all w-[80%]  lg:w-[40%] max-w-[500px]  rounded-lg justify-center items-center flex-col bg-[#362d2c] `}
     >
+      {previewProject &&
+    <PreviewProject project={project} setpreviewProject={setPreviewProject} />
+    }
+      
       <div className="  w-full flex items-center py-1 px-3   bg-slate-200 h-6 rounded-t-lg">
         <div className="flex items-center justify-between w-[63%]">
           <div className="flex items-center w-[50%]">
@@ -60,13 +81,14 @@ function Project({ title, tools, description, link, img, img2, linkrepo }) {
             </div>
           </div>
           <div className="absolute  top-5 right-3">
-            <button className="transition-all icongoproject mx-2 text-white flex items-center justify-center p-2 rounded-full border">
+            <button onClick={()=>{setPreviewProject(true)}} className="transition-all icongoproject mx-2 text-white flex items-center justify-center p-2 rounded-full border">
               <ion-icon name="eye"></ion-icon>
             </button>
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 }
 
