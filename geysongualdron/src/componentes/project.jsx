@@ -11,6 +11,10 @@ function Project({ title, tools, description, link, img, img2, linkrepo, photos 
   
   }
   , []);
+
+  useEffect(() => {
+    setproject({title, tools, description, link, img, img2, linkrepo, photos});
+  }, [description]);
     
   const handlehover = () => {
     sethover(hover == "opacity-0 pointer-events-none bottom-[100%]" ? "bg-opacity-60 bottom-0" : "opacity-0 pointer-events-none bottom-[100%]");
