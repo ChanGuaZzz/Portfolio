@@ -95,7 +95,7 @@ function Main({isInit}) {
               </div>
             </div>
         </div>
-        <hr className="w-[90%] border-[#646464]"></hr>
+        <hr className="w-[90%] border-[#646464]" id="projects"></hr>
         <div className="my-10 w-full flex flex-wrap flex-row items-center justify-center ">
         <Project title={"ControlZ"} photos={[controlz,controlz2]} img={controlz} img2={"controlz2.jpg"} tools={["React","ExpressJs", "Tailwind", "MongoDB", "MySQL"]} description={Texts.controlzdescription} link={"https://controlz.onrender.com"}  linkrepo={"https://github.com/RivotX/ControlZ.git"} />
         <Project title={"BlackJack"} photos={[blackjack,blackjack2]}  img={blackjack} img2={"blackjack2.png"} tools={["React","JavaScript", "Tailwind"]} description={Texts.blackjackdescription} link={"https://blackjack-gyzx.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/BlackJack-.git"}/>
