@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../index.css";
 import { useLanguage } from "../context/LanguageContext";
 import ToggleButton from "./toggleButton";
+import GeysonCV from "../assets/Geyson_Gualdron_CV.pdf";
 
 const Dropdown = () => {
   const { Texts, toggleLanguage, language } = useLanguage();
@@ -48,7 +49,7 @@ const Dropdown = () => {
           <>
               <a href="#about" className="dropdown-item w-full font-semibold border-b border-b-[#ffffff30]">About</a>
               <a href="#projects" className="dropdown-item w-full border-b border-b-[#ffffff30]">Projects</a>
-              <a href="#contact" className="dropdown-item w-full border-b border-b-[#ffffff30]">Contact</a>
+              <a href={GeysonCV} download className="dropdown-item w-full border-b border-b-[#ffffff30]">Contact</a>
             <ToggleButton />
           </>
       </div>

@@ -2,6 +2,7 @@ import Dropdown from "./dropdown";
 import { useLanguage } from "../context/LanguageContext";
 import ToggleButton from "./toggleButton";
 import { useEffect } from "react";
+import GeysonCV from "../assets/Geyson_Gualdron_CV.pdf";
 
 function Header() {
 
@@ -42,7 +43,7 @@ function Header() {
             {Texts.projects}
           </a>
           |
-          <a href="#contacts" className="mx-4 transition-all hover:opacity-60">
+          <a href={GeysonCV} download className="mx-4 transition-all hover:opacity-60">
             {Texts.contact}
           </a>
           <ToggleButton />

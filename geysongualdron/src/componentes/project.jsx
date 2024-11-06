@@ -7,13 +7,13 @@ function Project({ title, tools, description, link, img, img2, linkrepo, photos 
   const [project, setproject] = useState({});
 
   useEffect(() => {
-     setproject({title, tools, description, link, img, img2, linkrepo, photos});
+     setproject({title, tools, description, link, img, linkrepo, photos});
   
   }
   , []);
 
   useEffect(() => {
-    setproject({title, tools, description, link, img, img2, linkrepo, photos});
+    setproject({title, tools, description, link, img, linkrepo, photos});
   }, [description]);
     
   const handlehover = () => {
@@ -52,7 +52,7 @@ function Project({ title, tools, description, link, img, img2, linkrepo, photos 
       </div>
       <div>
         <img className="size-full rounded-lg " src={img} alt="no found" />
-        <div className={` bg-[url('./src/assets/img/${img2}')] bg-hover transition-all duration-300 absolute top-6 overflow-hidden  left-0 right-0  bg-black ${hover} rounded-lg rounded-t-none p-2`}>
+        <div className={` bg-hover transition-all duration-300 absolute top-6 overflow-hidden  left-0 right-0  bg-black ${hover} rounded-lg rounded-t-none p-2`}>
           <div className="sm:size-full flex flex-col  items-center ">
             <h1 className="text-white font-bold text-xl">{title}</h1>
             <p className="text-white  text-center hidden sm:block w-[300px]">{description}</p>
@@ -66,6 +66,7 @@ function Project({ title, tools, description, link, img, img2, linkrepo, photos 
           </div>
           <div className="absolute left-1/2 transform -translate-x-1/2 bottom-5">
             <div className="flex ">
+              {linkrepo &&
               <a
                 href={linkrepo}
                 target="_blank"
@@ -74,6 +75,7 @@ function Project({ title, tools, description, link, img, img2, linkrepo, photos 
               >
                 <ion-icon name="logo-github"></ion-icon>
               </a>
+              }
               <a
                 href={link}
                 target="_blank"

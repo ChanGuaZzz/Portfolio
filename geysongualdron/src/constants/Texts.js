@@ -17,6 +17,7 @@ export const Texts = {
     devtools: "Dev Tools",
     blackjackdescription: "A simple BlackJack game built using ReactJS",
     controlzdescription: "ControlZ is a fitness application",
+    brandoarjonadescription : "Brandoarjona is a website for a influencer",
   },
   es: {
     descriptionOne: `Hola soy Geyson y me apasiona la tecnología y `,
@@ -35,6 +36,6 @@ export const Texts = {
     devtools: "Herramientas de Desarrollo",
     blackjackdescription: "Un simple juego de BlackJack construido usando ReactJS con funcionalidad de apuestas.",
     controlzdescription: "ControlZ es una aplicación de fitness diseñada para ayudarte a alcanzar tus objetivos de salud",
-
+    brandoarjonadescription : "Brandoarjona es un sitio web para un influencer",
   },
 };
