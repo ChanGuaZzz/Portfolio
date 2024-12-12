@@ -9,7 +9,7 @@ import blackjack2 from "../assets/img/blackjack2.png";
 import controlz2 from "../assets/img/controlz2.jpg";
 import brandoarjona1 from "../assets/img/brandoarjona1.png";
 import brandoarjona2 from "../assets/img/brandoarjona2.png";
-import jabber from "../assets/img/jabber1.png";
+import jabber1 from "../assets/img/jabber1.png";
 import jabber2 from "../assets/img/jabber2.png";
 import jabber3 from "../assets/img/jabber3.png";
 import jabber4 from "../assets/img/jabber4.png";
@@ -116,7 +116,7 @@ function Main({isInit}) {
         <Project title={"ControlZ"} photos={[controlz,controlz2]} img={controlz} tools={["React","ExpressJs", "Tailwind", "MongoDB", "SQL"]} description={Texts.controlzdescription} link={"https://controlz.onrender.com"}  linkrepo={"https://github.com/RivotX/ControlZ.git"} />
         <Project title={"BlackJack"} photos={[blackjack,blackjack2]}  img={blackjack} tools={["React","JavaScript", "Tailwind"]} description={Texts.blackjackdescription} link={"https://blackjack-gyzx.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/BlackJack-.git"}/>
         <Project title={"BrandoArjona"} photos={[brandoarjona1,brandoarjona2]}  img={brandoarjona1} tools={["React","JavaScript", "Tailwind", "SQL","ExpressJs","Socket.io"]} description={Texts.brandoarjonadescription} link={"https://brandoarjona.onrender.com"}/>
-        <Project title={"Jabber"} photos={[jabber,jabber2,jabber3,jabber4]}  img={jabber} tools={["React","Python","JavaScript","SQL","Tailwind","Flask","Socket.io"]} description={Texts.jabberdescription} link={"https://jabberweb.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/Jabber.git"}/>
+        <Project title={"Jabber"} photos={[jabber1,jabber2,jabber3,jabber4]}  img={jabber1} tools={["React","Python","JavaScript","SQL","Tailwind","Flask","Socket.io"]} description={Texts.jabberdescription} link={"https://jabberweb.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/Jabber.git"}/>
         <Project title={"Zalk"} photos={[zalk1,zalk2,zalk3,zalk4,zalk5, zalk6, zalk7]}  img={zalk7} tools={["React-Native","JavaScript","TypeScript","SQL","Tailwind","ExpressJs","Socket.io"]} description={Texts.zalkdescription} link={"https://www.mediafire.com/file/h0axor1u9jlecit/Zalk.apk/file"} linkrepo={"https://github.com/ChanGuaZzz/ZalK-WalkieTalkie.git"}/>
         </div>
         
