@@ -56,7 +56,7 @@ function Project({ title, tools, description, link, img, img2, linkrepo, photos 
           <div className="sm:size-full flex flex-col  items-center ">
             <h1 className="text-white font-bold text-xl">{title}</h1>
             <p className="text-white  text-center hidden sm:block w-[300px]">{description}</p>
-            <div className="flex flex-wrap items-center w-[80%]  justify-center">
+            <div className="flex flex-wrap items-center w-[70%] justify-center">
               {
                 tools.map((tool, index) => (
                   <h1 key={index} className="toolsproject text-xs sm:text-base ">{tool}</h1>

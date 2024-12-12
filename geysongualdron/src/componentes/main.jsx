@@ -9,6 +9,10 @@ import blackjack2 from "../assets/img/blackjack2.png";
 import controlz2 from "../assets/img/controlz2.jpg";
 import brandoarjona1 from "../assets/img/brandoarjona1.png";
 import brandoarjona2 from "../assets/img/brandoarjona2.png";
+import jabber1 from "../assets/img/jabber1.png";
+import jabber2 from "../assets/img/jabber2.png";
+import jabber3 from "../assets/img/jabber3.png";
+import jabber4 from "../assets/img/jabber4.png";
 
 function Main({isInit}) {
   const { Texts } = useLanguage();
@@ -99,10 +103,10 @@ function Main({isInit}) {
         </div>
         <hr className="w-[90%] border-[#646464]" id="projects"></hr>
         <div className="my-10 w-full flex flex-wrap flex-row items-center justify-center ">
-        <Project title={"ControlZ"} photos={[controlz,controlz2]} img={controlz} tools={["React","ExpressJs", "Tailwind", "MongoDB", "MySQL"]} description={Texts.controlzdescription} link={"https://controlz.onrender.com"}  linkrepo={"https://github.com/RivotX/ControlZ.git"} />
+        <Project title={"ControlZ"} photos={[controlz,controlz2]} img={controlz} tools={["React","ExpressJs", "Tailwind", "MongoDB", "SQL"]} description={Texts.controlzdescription} link={"https://controlz.onrender.com"}  linkrepo={"https://github.com/RivotX/ControlZ.git"} />
         <Project title={"BlackJack"} photos={[blackjack,blackjack2]}  img={blackjack} tools={["React","JavaScript", "Tailwind"]} description={Texts.blackjackdescription} link={"https://blackjack-gyzx.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/BlackJack-.git"}/>
-        <Project title={"BrandoArjona"} photos={[brandoarjona1,brandoarjona2]}  img={brandoarjona1} tools={["React","JavaScript", "Tailwind", "MySQL","ExpressJs"]} description={Texts.brandoarjonadescription} link={"https://brandoarjona.onrender.com"}/>
-
+        <Project title={"BrandoArjona"} photos={[brandoarjona1,brandoarjona2]}  img={brandoarjona1} tools={["React","JavaScript", "Tailwind", "SQL","ExpressJs"]} description={Texts.brandoarjonadescription} link={"https://brandoarjona.onrender.com"}/>
+        <Project title={"Jabber"} photos={[jabber1,jabber2,jabber3,jabber4]}  img={jabber2} tools={["React","Python","JavaScript","SQL","Tailwind","Flask"]} description={Texts.jabberdescription} link={"https://jabberweb.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/Jabber.git"}/>
         </div>
         
       </main>

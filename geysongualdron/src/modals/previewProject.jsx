@@ -38,7 +38,7 @@ function PreviewProject({ project, setpreviewProject }) {
         </div>
         <div className="size-full flex justify-center items-center flex-col">
         
-        <div className=" max-w-[1200px]   rounded-2xl p-6 ">
+        <div className=" max-w-[1200px] w-full   rounded-2xl p-6 ">
         <div className="  w-full flex items-center py-1 px-3   bg-slate-200 h-6 rounded-t-lg">
         <div className="flex items-center justify-between w-[63%]">
           <div className="flex items-center w-[50%]">

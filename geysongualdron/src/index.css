@@ -51,12 +51,13 @@ body {
 }
 
 .dropdown-menu {
+  background-color: #11111160;
   position: absolute;
   top: 100%;
   right: 0;
   border-radius: 5px;
-  backdrop-filter: blur(20px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.438);
   margin-top: 5px;
   padding: 10px 0;
   z-index: 1;
