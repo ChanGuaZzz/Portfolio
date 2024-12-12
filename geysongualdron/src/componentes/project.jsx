@@ -32,7 +32,7 @@ function Project({ title, tools, description, link, img, img2, linkrepo, photos 
     <div
       onMouseEnter={handlehover}
       onMouseLeave={handlehover}
-      className={`relative project flex border border-slate-300 m-3 transition-all w-[80%]  lg:w-[40%] max-w-[500px]  rounded-lg justify-center items-center flex-col bg-[#362d2c] `}
+      className={`relative project flex border border-slate-300 m-3 transition-all w-[80%] max-h-[280px]  lg:w-[40%] max-w-[500px]  rounded-lg justify-center items-center flex-col bg-[#000000] `}
     >
       {previewProject &&
     <PreviewProject project={project} setpreviewProject={setPreviewProject} />
@@ -51,7 +51,9 @@ function Project({ title, tools, description, link, img, img2, linkrepo, photos 
         </div>
       </div>
       <div>
-        <img className="size-full rounded-lg " src={img} alt="no found" />
+      <div className="relative w-full h-[248px]">
+        <img src={img} alt="no there" className="  w-full h-full object-cover " />
+      </div>
         <div className={` bg-hover transition-all duration-300 absolute top-6 overflow-hidden  left-0 right-0  bg-black ${hover} rounded-lg rounded-t-none p-2`}>
           <div className="sm:size-full flex flex-col  items-center ">
             <h1 className="text-white font-bold text-xl">{title}</h1>

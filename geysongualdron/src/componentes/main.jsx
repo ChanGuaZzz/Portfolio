@@ -13,6 +13,15 @@ import jabber1 from "../assets/img/jabber1.png";
 import jabber2 from "../assets/img/jabber2.png";
 import jabber3 from "../assets/img/jabber3.png";
 import jabber4 from "../assets/img/jabber4.png";
+import zalk1 from "../assets/img/zalk1.png";
+import zalk2 from "../assets/img/zalk2.png";
+import zalk3 from "../assets/img/zalk3.png";
+import zalk4 from "../assets/img/zalk4.png";
+import zalk5 from "../assets/img/zalk5.png";
+import zalk6 from "../assets/img/zalk6.png";
+import zalk7 from "../assets/img/zalk7.png";
+
+
 
 function Main({isInit}) {
   const { Texts } = useLanguage();
@@ -94,6 +103,7 @@ function Main({isInit}) {
                     <li>Flask</li>
                     <li>SQLalchemy</li>
                     <li>Rest Api</li>
+                    <li>Socket.io</li>
                     <li>Vs code</li>
                     <li>GitHub</li>
                   </ul>
@@ -105,8 +115,9 @@ function Main({isInit}) {
         <div className="my-10 w-full flex flex-wrap flex-row items-center justify-center ">
         <Project title={"ControlZ"} photos={[controlz,controlz2]} img={controlz} tools={["React","ExpressJs", "Tailwind", "MongoDB", "SQL"]} description={Texts.controlzdescription} link={"https://controlz.onrender.com"}  linkrepo={"https://github.com/RivotX/ControlZ.git"} />
         <Project title={"BlackJack"} photos={[blackjack,blackjack2]}  img={blackjack} tools={["React","JavaScript", "Tailwind"]} description={Texts.blackjackdescription} link={"https://blackjack-gyzx.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/BlackJack-.git"}/>
-        <Project title={"BrandoArjona"} photos={[brandoarjona1,brandoarjona2]}  img={brandoarjona1} tools={["React","JavaScript", "Tailwind", "SQL","ExpressJs"]} description={Texts.brandoarjonadescription} link={"https://brandoarjona.onrender.com"}/>
-        <Project title={"Jabber"} photos={[jabber1,jabber2,jabber3,jabber4]}  img={jabber2} tools={["React","Python","JavaScript","SQL","Tailwind","Flask"]} description={Texts.jabberdescription} link={"https://jabberweb.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/Jabber.git"}/>
+        <Project title={"BrandoArjona"} photos={[brandoarjona1,brandoarjona2]}  img={brandoarjona1} tools={["React","JavaScript", "Tailwind", "SQL","ExpressJs","Socket.io"]} description={Texts.brandoarjonadescription} link={"https://brandoarjona.onrender.com"}/>
+        <Project title={"Jabber"} photos={[jabber1,jabber2,jabber3,jabber4]}  img={jabber2} tools={["React","Python","JavaScript","SQL","Tailwind","Flask","Socket.io"]} description={Texts.jabberdescription} link={"https://jabberweb.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/Jabber.git"}/>
+        <Project title={"Zalk"} photos={[zalk1,zalk2,zalk3,zalk4,zalk5, zalk6, zalk7]}  img={zalk7} tools={["React-Native","JavaScript","TypeScript","SQL","Tailwind","ExpressJs","Socket.io"]} description={Texts.zalkdescription} link={"https://www.mediafire.com/file/h0axor1u9jlecit/Zalk.apk/file"} linkrepo={"https://github.com/ChanGuaZzz/ZalK-WalkieTalkie.git"}/>
         </div>
         
       </main>
