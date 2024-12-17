@@ -2,7 +2,7 @@
 export const Texts = {
   en: {
     descriptionOne: `Hi I'm Geyson and im passionate about technology and `,
-    descriptionTwo: ', and I am always looking to learn new things.',
+    descriptionTwo: ', always looking to learn new things and collaborate.',
     portfolio: 'Portfolio',
     about: 'About',
     projects: 'Projects',
