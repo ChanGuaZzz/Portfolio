@@ -23,7 +23,7 @@ export const Texts = {
   },
   es: {
     descriptionOne: `Hola soy Geyson y me apasiona la tecnología y `,
-    descriptionTwo: ', y siempre estoy buscando aprender cosas nuevas.',
+    descriptionTwo: ', siempre en busqueda de aprender cosas nuevas y colaborar.',
     portfolio: 'Portafolio',
     about: 'Sobre mi',
     projects: 'Proyectos',
