@@ -2,7 +2,7 @@ import Dropdown from "./dropdown";
 import { useLanguage } from "../context/LanguageContext";
 import ToggleButton from "./toggleButton";
 import { useEffect } from "react";
-import GeysonCV from "../assets/Geyson_Gualdron_CV.pdf";
+import GeysonCV from "../assets/CV.pdf";
 
 function Header() {
 

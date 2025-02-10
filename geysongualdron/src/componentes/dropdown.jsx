@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../index.css";
 import { useLanguage } from "../context/LanguageContext";
 import ToggleButton from "./toggleButton";
-import GeysonCV from "../assets/Geyson_Gualdron_CV.pdf";
+import GeysonCV from "../assets/CV.pdf";
 
 const Dropdown = () => {
   const { Texts, toggleLanguage, language } = useLanguage();
