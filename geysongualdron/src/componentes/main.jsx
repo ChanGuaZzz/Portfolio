@@ -127,7 +127,7 @@ function Main({isInit}) {
         <Project title={"BrandoArjona"} photos={[brandoarjona1,brandoarjona2]}  img={brandoarjona1} tools={["React","JavaScript", "Tailwind", "SQL","ExpressJs","Socket.io"]} description={Texts.brandoarjonadescription} link={"https://brandoarjona.onrender.com"}/>
         <Project title={"Jabber"} photos={[jabber,jabber2,jabber3,jabber4]}  img={jabber} tools={["React","Python","JavaScript","SQL","Tailwind","Flask","Socket.io"]} description={Texts.jabberdescription} link={"https://jabberweb.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/Jabber.git"}/>
         <Project title={"Zalk"} photos={[zalk1,zalk2,zalk3,zalk4,zalk5, zalk6, zalk7]}  img={zalk7} tools={["React-Native","JavaScript","TypeScript","SQL","Tailwind","ExpressJs","Socket.io"]} description={Texts.zalkdescription} link={"https://www.mediafire.com/file/h0axor1u9jlecit/Zalk.apk/file"} linkrepo={"https://github.com/ChanGuaZzz/ZalK-WalkieTalkie.git"}/>
-        <Project title={"Hikari Restaurant"} photos={[hikari1,hikari2,hikari3,hikari4,hikari5, hikari6, hikari7, hikari8]}  img={hikari7} tools={["React","JavaScript","SQL","Tailwind","ExpressJs"]} description={Texts.hikaridescription} link={"https://hikarisushi.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/HikariSushi.git"}/>
+        <Project title={"Hikari Restaurant"} photos={[hikari1,hikari2,hikari3,hikari4,hikari5, hikari6, hikari7, hikari8]}  img={hikari1} tools={["React","JavaScript","SQL","Tailwind","ExpressJs"]} description={Texts.hikaridescription} link={"https://hikarisushi.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/HikariSushi.git"}/>
         
         </div>
         
