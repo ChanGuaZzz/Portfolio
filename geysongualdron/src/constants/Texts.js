@@ -20,6 +20,7 @@ export const Texts = {
     brandoarjonadescription : "Brandoarjona is a website for a influencer",
     jabberdescription: "Jabber is an online chat application",
     zalkdescription: "Zalk is an online Walkie Talkie application",
+    hikaridescription: "Hikari is a restaurant website with reservation system",
   },
   es: {
     descriptionOne: `Hola soy Geyson y me apasiona la tecnología y `,
@@ -41,5 +42,6 @@ export const Texts = {
     brandoarjonadescription : "Brandoarjona es un sitio web para un influencer",
     jabberdescription: "Jabber es una aplicación de chat en linea",
     zalkdescription: "Zalk es una aplicación de Walkie Talkie en linea",
+    hikaridescription: "Hikari es un sitio web de restaurante con sistema de reservas",
   },
 };

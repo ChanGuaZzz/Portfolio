@@ -20,6 +20,15 @@ import zalk4 from "../assets/img/zalk4.png";
 import zalk5 from "../assets/img/zalk5.png";
 import zalk6 from "../assets/img/zalk6.png";
 import zalk7 from "../assets/img/zalk7.png";
+import hikari1 from "../assets/img/hikari1.png";
+import hikari2 from "../assets/img/hikari2.png";
+import hikari3 from "../assets/img/hikari3.png";
+import hikari4 from "../assets/img/hikari4.png";
+import hikari5 from "../assets/img/hikari5.png";
+import hikari6 from "../assets/img/hikari6.png";
+import hikari7 from "../assets/img/hikari7.png";
+import hikari8 from "../assets/img/hikari8.png";
+
 
 
 
@@ -118,6 +127,8 @@ function Main({isInit}) {
         <Project title={"BrandoArjona"} photos={[brandoarjona1,brandoarjona2]}  img={brandoarjona1} tools={["React","JavaScript", "Tailwind", "SQL","ExpressJs","Socket.io"]} description={Texts.brandoarjonadescription} link={"https://brandoarjona.onrender.com"}/>
         <Project title={"Jabber"} photos={[jabber,jabber2,jabber3,jabber4]}  img={jabber} tools={["React","Python","JavaScript","SQL","Tailwind","Flask","Socket.io"]} description={Texts.jabberdescription} link={"https://jabberweb.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/Jabber.git"}/>
         <Project title={"Zalk"} photos={[zalk1,zalk2,zalk3,zalk4,zalk5, zalk6, zalk7]}  img={zalk7} tools={["React-Native","JavaScript","TypeScript","SQL","Tailwind","ExpressJs","Socket.io"]} description={Texts.zalkdescription} link={"https://www.mediafire.com/file/h0axor1u9jlecit/Zalk.apk/file"} linkrepo={"https://github.com/ChanGuaZzz/ZalK-WalkieTalkie.git"}/>
+        <Project title={"Hikari Restaurant"} photos={[hikari1,hikari2,hikari3,hikari4,hikari5, hikari6, hikari7, hikari8]}  img={hikari7} tools={["React","JavaScript","SQL","Tailwind","ExpressJs"]} description={Texts.hikaridescription} link={"https://hikarisushi.onrender.com"} linkrepo={"https://github.com/ChanGuaZzz/HikariSushi.git"}/>
+        
         </div>
         
       </main>
