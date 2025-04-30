@@ -21,6 +21,7 @@ export const Texts = {
     jabberdescription: "Jabber is an online chat application",
     zalkdescription: "Zalk is an online Walkie Talkie application",
     hikaridescription: "Hikari is a restaurant website with reservation system",
+    sportdescription: "Sports betting website with landing page and implemented payments",
   },
   es: {
     descriptionOne: `Hola soy Geyson y me apasiona la tecnología y `,
@@ -43,5 +44,6 @@ export const Texts = {
     jabberdescription: "Jabber es una aplicación de chat en linea",
     zalkdescription: "Zalk es una aplicación de Walkie Talkie en linea",
     hikaridescription: "Hikari es un sitio web de restaurante con sistema de reservas",
+    sportdescription: "Sitio web de venta de pronosticos deportivos con landing page y pagos implementados",
   },
 };
